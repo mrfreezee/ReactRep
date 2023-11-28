@@ -1,0 +1,38 @@
+.burgerMenuWrapper {
+    max-width: 236px;
+    width: 300%;
+    height: 960px;
+    position: absolute;
+    top: 84px;
+    left: 0;
+    transform: translateX(-150%);
+    animation: ani 0.5s forwards;
+    background-color: white;
+}
+
+@keyframes ani {
+    0% {transform: translateX(-150%);}
+    100% {transform: translateY(0);}
+}
+
+
+.burgerList {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    margin: 0;
+}
+
+.burgerListItem {
+    width: 100%;
+    height: 83px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+}
+

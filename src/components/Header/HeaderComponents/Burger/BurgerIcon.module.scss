@@ -1,0 +1,68 @@
+.burgMenu {
+    width: 100%;
+    max-width: 84px;
+    height: 100%;
+    border-right: 2px solid #5360CD;
+    border-left: 2px solid #5360CD;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.burgSpan{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.burgSpan span {
+    width: 24px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    transition: all 0.3s;
+}
+
+.burgSpan2 span {
+    width: 24px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+
+.burgSpan span:nth-of-type(2) {
+    top: calc(50% - 8px);
+}
+
+.burgSpan span:nth-of-type(3) {
+    top: calc(50% + 8px);
+}
+
+.burgSpan2 span:nth-of-type(1) {
+    display: none;
+}
+
+.burgSpan2 span:nth-of-type(2) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(45deg);
+}
+
+.burgSpan2 span:nth-of-type(3) {
+    top: 50%;
+    transform: translate(-50%, 0%) rotate(-45deg);
+}
+
+.burgMenuWindow{
+    width: 100%;
+    max-width: 236px;
+}

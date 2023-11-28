@@ -1,0 +1,58 @@
+.mediumCardWrapper{
+    width: 352px;
+    border-bottom: 1px solid #DADADA;
+    height: 452px;
+}
+.astronautImg{
+    width: 100%;
+}
+
+
+.dateBlock {
+    display: flex;
+    align-items: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    color: #8D8E97;
+    margin-top: 24px;
+
+    p {
+        margin: 0;
+    }
+}
+
+.titleCard {
+    color: var(--system-colors-secondary, #313037);
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    margin-top: 8px;
+
+    &:hover{
+        color: #2231AA;
+        cursor: pointer;
+    }
+}
+
+.buttonsCard{
+    height: 63px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 28px;
+}
+
+.managementIcons,
+.handsIcon{
+    display: flex;
+    width: 72px;
+    justify-content: space-between;
+}
+.likeIconWrapper,
+.dislikeIconWrapper{
+    display: flex;
+    justify-content: space-between;
+}

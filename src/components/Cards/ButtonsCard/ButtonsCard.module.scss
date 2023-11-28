@@ -1,0 +1,60 @@
+
+
+
+
+.likeIcon,
+.dislikeIcon{
+    width: 22px;
+    height: 22px;
+}
+
+.likeIcon:hover{
+    background-color: #5360CD;
+    border-radius: 5px;
+    cursor: pointer;
+
+    path{
+        fill: white;
+    }
+}
+
+
+.dislikeIcon:hover{
+    background-color: #FD3419;
+    background-clip: content-box;
+    border-radius: 5px;
+    cursor: pointer;
+
+    path{
+        fill: white;
+    }
+}
+
+.likeIcon:active,
+.dislikeIcon:active{
+    transform: scale(90%);
+}
+
+.countLikes,
+.countDislikes{
+    font-family: Inter;
+    width: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.bookmarkicon:hover{
+    background-color: #5360CD;
+    background-clip: content-box;
+    border-radius: 5px;
+    cursor: pointer;
+
+    path{
+        fill: white;
+    }
+}
+
+.menuIcon:hover{
+    transform: scale(110%);
+    cursor: pointer;
+}

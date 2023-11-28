@@ -1,0 +1,23 @@
+.tabWrapper {
+    width: 80%;
+    display: flex;
+    border-bottom: 1px solid silver;
+    
+}
+
+.tab {
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    padding: 0 40px 24px 40px;
+
+    &.active {
+        border-bottom: 2px solid black;
+    }
+    &:hover{
+        color: #2231AA;
+        cursor: pointer;
+    }
+}

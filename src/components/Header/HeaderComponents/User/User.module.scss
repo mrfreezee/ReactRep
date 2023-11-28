@@ -1,0 +1,39 @@
+.userComponent {
+    min-width: 198px;
+    height: 83px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    background-color: #2231AA;
+    border: 1px solid #5360CD}
+
+.userWrapper {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+}
+
+.userInitial {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    background: #5360CD;
+    color: white;
+}
+
+.userName {
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 34px;
+    color: white;
+
+}
