@@ -1,0 +1,49 @@
+.pageWrapper {
+    width: 1120px;
+    position: relative;
+    margin: 0 auto;
+}
+
+
+
+.pageForm {
+    width: 544px;
+    // height: 392px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    margin: 72px auto 0;
+    border: 1px solid #dadada;
+    border-radius: 1px;
+}
+
+.blockInputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.forgotPasswordButton {
+    text-decoration: none;
+    width: 140px;
+    font-family: Inter;
+    font-size: 16px;
+    color: #313037;
+
+    &:hover {
+        cursor: pointer;
+        color: #2231AA;
+    }
+}
+
+
+.quastionString {
+    color: var(--background-colors-gray, #8D8E97);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+    margin-top: 24px;
+}
+

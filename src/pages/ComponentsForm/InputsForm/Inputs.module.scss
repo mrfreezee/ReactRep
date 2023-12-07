@@ -1,0 +1,29 @@
+.emailInput {
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.passwordInput {
+    margin-bottom: 40px;
+    width: 100%;
+
+}
+
+.emailInput,
+.passwordInput {
+    padding: 18px;
+    font-family: Inter;
+    font-size: 16px;
+    color: #8d8e97;
+    outline: none;
+    border: none;
+}
+
+.lableInput {
+    color: var(--system-colors-secondary, #313037);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+}

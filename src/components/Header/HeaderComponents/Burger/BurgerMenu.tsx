@@ -1,12 +1,14 @@
 import style from './BurgerMenu.module.scss'
 import Style from '../User/User.module.scss'
 import { UserComponent } from '../User/User'
-
+import { ThemeButtons } from './ThemeBtns/ThemeBtns'
 import { useState } from "react"
 
 
 type Props = {
     open: boolean
+    theme: string 
+    changeTheme: (theme: string) => void
 }
 
 
@@ -27,6 +29,7 @@ export const BurgerMenu = (props: Props) => {
                     ))
                 }
             </ul>
+            <ThemeButtons {...props}/>
         </div>
     )
 }

@@ -1,0 +1,42 @@
+.btnDislike {
+    margin: 50px;
+    display: flex;
+    padding: 16px 32px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 2px;
+    border: none;
+    background: var(--contextual-colors-light, #E8E8E8);
+    cursor: pointer;
+
+    &:hover{
+        background-color: #FD3419;
+
+        path{
+            fill: white;
+        }
+    }
+}
+
+.btnLike, .bookmark {
+    margin: 50px;
+    display: flex;
+    padding: 16px 32px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 2px;
+    border: none;
+    background: var(--contextual-colors-light, #E8E8E8);
+    cursor: pointer;
+
+    &:hover{
+        background-color: #5360CD;
+
+        path{
+            fill: white;
+        }
+    }
+}
+

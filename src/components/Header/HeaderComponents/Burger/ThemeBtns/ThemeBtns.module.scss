@@ -1,0 +1,16 @@
+body{
+    background-color: #313037;
+    background-color: #f3f3f3;
+}
+
+.themeBtnsWrapper{
+    width: 100%;
+    height: 83px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.themBtns{
+    border: none;
+    cursor: pointer;
+}

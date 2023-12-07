@@ -1,0 +1,41 @@
+.wrapperBlog {
+    width: 1120px;
+    margin: 72px auto 0;
+}
+
+.headerBlog {
+    font-family: Inter;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    margin: 72px 0 40px 0;
+}
+
+.pagesPosts {
+    display: flex;
+    justify-content: space-between;
+    margin: 72px auto;
+    color: var(--system-colors-secondary, #313037);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    /* 150% */
+    text-transform: uppercase;
+}
+
+.wrapperNumberPages {
+    display: flex;
+    width: 180px;
+    justify-content: space-between;
+}
+
+.numberPage{
+    
+
+    &:hover{
+        color: #2231AA;
+        cursor: pointer;
+    }
+}

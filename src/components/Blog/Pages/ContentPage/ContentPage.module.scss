@@ -1,0 +1,68 @@
+.pageWrapper {
+    width: 1120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnHomeAndNumPost {
+    display: flex;
+    // align-items: center;
+    width: 100%;
+}
+
+.btnHome {
+    color: var(--system-colors-secondary, #313037);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    border: none;
+
+    &:hover{
+        cursor: pointer;
+        color: #2231AA;
+    }
+}
+
+.numPost {
+    color: var(--background-colors-gray, #8D8E97);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.headerPage {
+    color: var(--system-colors-secondary, #313037);
+    font-family: Inter;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 80px;
+    margin-top: 32px;
+}
+
+.contentPage{
+    margin-top: 48px;
+}
+
+.textPage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttonsPage{
+    display: flex;
+}
+
+.bookmarkText{
+    margin: 0;
+}
