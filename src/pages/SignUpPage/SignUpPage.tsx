@@ -1,10 +1,10 @@
 import styles from '../StylesPages.module.scss'
 import { Header } from '../../components/Header/Header'
 import { HeaderPages } from '../HeaderPages/HeaderPages'
-// import { FooterForm } from '../../components/Footer/Footer'
 import { ButtonComplete } from '../ComponentsForm/ButtonComplete/ButtonnComplete'
 import { InputEmail } from '../ComponentsForm/InputsForm/InputEmail'
 import { InputPassword } from '../ComponentsForm/InputsForm/InputPassword'
+import { NavLink } from 'react-router-dom'
 
 
 export const SignUpPage = () =>{
@@ -18,9 +18,9 @@ export const SignUpPage = () =>{
                     <InputPassword lable={'Password'}/>
                     <InputPassword lable={'Confirm password'}/>
                 </div>
-                <ButtonComplete name={'Sign Up'}/>
+                <ButtonComplete><NavLink style={{textDecoration: 'none', color: 'white'}} to='/registrationconfirmation'>Sign Up</NavLink></ButtonComplete>
                 <div className={styles.quastionString}>
-                    Don’t have an account? SignIn
+                    Don’t have an account? <NavLink style={{textDecoration: 'none'}} to='/signin'>Sign In</NavLink>
                 </div>
             </form>
         </div>

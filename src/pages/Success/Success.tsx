@@ -2,8 +2,7 @@ import styles from './Success.module.scss'
 import { HeaderPages } from '../HeaderPages/HeaderPages'
 import { Header } from '../../components/Header/Header'
 import { ButtonComplete } from '../ComponentsForm/ButtonComplete/ButtonnComplete'
-// import { FooterForm } from '../../components/Footer/Footer'
-
+import { NavLink } from 'react-router-dom'
 
 export const Success = () =>{
     return(
@@ -14,7 +13,8 @@ export const Success = () =>{
                 <p>Email confirmed.<br/>
                     Your registration is now completed
                 </p>
-                <ButtonComplete name={'Go to home'}/>
+                <ButtonComplete><NavLink style={{textDecoration: 'none', color: 'white'}} to='/'>Go to home</NavLink></ButtonComplete>
+
             </div>
         </div>
         </>

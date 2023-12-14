@@ -1,20 +1,21 @@
 import style from './BurgerMenu.module.scss'
-import Style from '../User/User.module.scss'
 import { UserComponent } from '../User/User'
 import { ThemeButtons } from './ThemeBtns/ThemeBtns'
-import { useState } from "react"
-
+import {  NavLink } from 'react-router-dom'
+import { useState } from 'react'
 
 type Props = {
     open: boolean
-    theme: string 
-    changeTheme: (theme: string) => void
+    theme?: string
+    changeTheme?: (theme: string) => void
 }
 
-
-const data = ['Home', 'Add post']
-
 export const BurgerMenu = (props: Props) => {
+    const [theme, setTheme] = useState<string>('light')
+
+  const changeTheme = (theme: string) => {
+    setTheme(theme)
+  }
     if (!props.open) {
         return null
     }
@@ -23,14 +24,13 @@ export const BurgerMenu = (props: Props) => {
         <div className={style.burgerMenuWrapper}>
             <ul className={style.burgerList}>
                 <li><UserComponent/></li>
-                {
-                    data.map((item, index) => (
-                        <li className={style.burgerListItem} key={index}>{item}</li>
-                    ))
-                }
+                <li className={style.burgerListItem}><NavLink style={{textDecoration: 'none'}} to='/'>Home</NavLink></li>
+                <li className={style.burgerListItem}><NavLink style={{textDecoration: 'none'}} to='/addpost'>Add post</NavLink></li>
             </ul>
-            <ThemeButtons {...props}/>
+            <ThemeButtons theme={theme} changeTheme={changeTheme}/>
+            <NavLink className={style.signInBtn} style={{textDecoration: 'none'}} to='/signin'>Sign In</NavLink>
         </div>
-    )
+    ) 
 }
+
 

@@ -17,16 +17,15 @@ export const ThemeButtons = (props: Props) =>{
         
         
         <button  className={styles.themBtns}
-            onClick={() => themeState.setState('dark')} 
-            disabled={themeState.state !== 'light'}
+            onClick={() => themeState.setState('light')} 
+            disabled={themeState.state === 'light'}
         >
             
             <LightBtn disabled={themeState.state !== 'light'}/>
         </button>
-        {/* <DarkSvg disabled={true}/> */}
         <button className={styles.themBtns}
-            onClick={() => themeState.setState('light')} 
-            disabled={themeState.state === 'light'}
+            onClick={() => themeState.setState('dark')} 
+            disabled={themeState.state !== 'light'}
             >
             <DarkBtn disabled={themeState.state === 'light'}/>
         </button>

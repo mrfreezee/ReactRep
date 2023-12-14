@@ -8,12 +8,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
 }
 
-.burgSpan{
-    width: 30px;
-    height: 30px;
+.burgerIcon {
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    z-index: 1;
+    position: relative;
 }
 
 .burgSpan span {
@@ -25,6 +31,7 @@
     transform: translate(-50%, -50%);
     background-color: white;
     transition: all 0.3s;
+    z-index: 1;
 }
 
 .burgSpan2 span {
@@ -37,6 +44,8 @@
     background-color: white;
     transition: all 0.3s;
     cursor: pointer;
+    z-index: 1;
+
 }
 
 
@@ -66,3 +75,4 @@
     width: 100%;
     max-width: 236px;
 }
+

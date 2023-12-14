@@ -31,7 +31,7 @@ export const Blog = () =>{
                 </div>
                 <button className={styles.buttonNext}/>
             </div>
-            <Footer/>
+            
         </div>
     )
 }

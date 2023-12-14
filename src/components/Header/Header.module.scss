@@ -5,8 +5,11 @@
     display: flex;
     justify-content: space-between;
     position: fixed;
-    z-index: 1;
+    top: 0;
+    left: 0;
+    z-index: 2;
     border-bottom: 1px solid #5360CD
+
 
 }
 

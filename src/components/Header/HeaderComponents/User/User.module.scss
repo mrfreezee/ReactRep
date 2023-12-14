@@ -1,9 +1,9 @@
 .userComponent {
-    min-width: 198px;
+    // min-width: 80px;
     height: 83px;
     display: flex;
     align-items: center;
-    padding: 0 15px;
+    // padding: 0 15px;
     background-color: #2231AA;
 }
 
@@ -25,6 +25,7 @@
     border-radius: 2px;
     background: #5360CD;
     color: white;
+    margin-left: 15px;
 }
 
 .userName {
@@ -35,5 +36,17 @@
     font-weight: 600;
     line-height: 34px;
     color: white;
+    margin-left: 15px;
 
+
+}
+.isLoginedUser{
+    min-width: 198px;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+}
+
+.userIcon{
+    padding: 30px;
 }

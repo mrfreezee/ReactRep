@@ -1,6 +1,5 @@
-import { useState } from "react"
+import { useState, useReducer } from "react"
 import style from './BurgerIcon.module.scss'
-
 
 
 type Props = {
@@ -8,9 +7,10 @@ type Props = {
     onClick1: () => void
 }
 
+
 export const BurgerIcon = (props: Props) => {
     return (
-        <div onClick={props.onClick1}>
+        <div className={style.burgerIcon} onClick={props.onClick1}>
             {
                 props.open ? (
                     <div className={style.burgSpan2}>

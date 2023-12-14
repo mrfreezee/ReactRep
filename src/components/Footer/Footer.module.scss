@@ -1,5 +1,12 @@
 .footer {
-    width: 1120px;
+    width: 100%;
+    margin-top: 72px;
+    position: relative;
+    bottom: 0;
+}
+
+.footerWrapper{
+    width: 81.2%;
     height: 92px;
     display: flex;
     justify-content: space-between;
@@ -8,5 +15,5 @@
     font-family: Inter;
     font-size: 16px;
     border-top: 1px solid #dadada;
-    margin: 150px auto 0;
+    margin: 0 auto;
 }

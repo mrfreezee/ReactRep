@@ -1,13 +1,13 @@
+import { ReactNode } from 'react'
 import styles from './ButtonComplete.module.scss'
 
 type Props = {
-    name: string
+    children?: ReactNode
 }
 
-export const ButtonComplete = (props: Props) =>{
-    const {name} = props
+export const ButtonComplete = ({children}: Props) =>{
 
     return(
-        <input type='button' value={name} className={styles.buttonComplete}/>
+        <button className={styles.buttonComplete}>{children}</button>
     )
 }

@@ -1,4 +1,4 @@
-.burgerWrapper{
+.burgerWrapper {
     position: relative;
     width: 100%;
     max-width: 84px;
@@ -8,4 +8,30 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.menuWrapper {
+    // position: relative;
+    // top: 20px;
+    // position: relative;
+    width: 100%;
+    max-width: 84px;
+    height: 100%;
+    border-right: 1px solid #5360CD;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menuWrapper.open .burgerIcon .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.menuWrapper.open .burgerIcon .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menuWrapper.open .burgerIcon .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
 }

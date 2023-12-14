@@ -5,23 +5,29 @@ import { HeaderPages } from '../HeaderPages/HeaderPages'
 import { ButtonComplete } from '../ComponentsForm/ButtonComplete/ButtonnComplete'
 import { InputEmail } from '../ComponentsForm/InputsForm/InputEmail'
 import { InputPassword } from '../ComponentsForm/InputsForm/InputPassword'
+import { useRef } from 'react'
+import { useEffect } from 'react'
+import { NavLink } from 'react-router-dom'
+
 
 export const SignInPage = () =>{
+    const inputRef = useRef<HTMLInputElement>(null)
+
+    useEffect(() =>{
+        inputRef.current?.focus()
+    })
     return(<>
         <div className={styles.pageWrapper}>
             <HeaderPages name={'Sign In'}/>
             <form className={styles.pageForm}>
                 <div className={styles.blockInputs}>
-                    <InputEmail lable={'Email'}/>
+                    <InputEmail lable={'Email'} ref1={inputRef}/>
                     <InputPassword lable={'Password'}/>
-                    {/* <input type='button' value='Forgot password?' className={styles.forgotPasswordButton}/> */}
-                    <a href='#' className={styles.forgotPasswordButton}>
-                        Forgot password?
-                    </a>
+                    <NavLink className={styles.forgotPasswordButton} to='/resetpasswordpage'>Forgot password?</NavLink>
                 </div>
-                <ButtonComplete name={'Sign In'}/>
+                <ButtonComplete><NavLink to='/' style={{color: 'white', textDecoration: 'none', width: '100%', display: 'block'}}>Sign In</NavLink></ButtonComplete>
                 <div className={styles.quastionString}>
-                    Don’t have an account? SignUp
+                    Don’t have an account? <NavLink style={{textDecoration: 'none'}} to='/signup'>Sign Up</NavLink>
                 </div>
             </form>
         </div>
