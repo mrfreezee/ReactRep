@@ -20,7 +20,7 @@ export const ResetPasswordPage = () =>{
             <HeaderPages name={'Reset password'}/>
             <form className={styles.pageForm}>
                 <InputEmail lable={'Email'} ref1={inputRef}/>
-                <ButtonComplete><NavLink style={{color: 'white', textDecoration: 'none'}} to='/resetpasswordpage2'>Reset</NavLink></ButtonComplete>
+                <ButtonComplete link='/resetpasswordpage2'>Reset</ButtonComplete>
             </form>
         </div>
         </>

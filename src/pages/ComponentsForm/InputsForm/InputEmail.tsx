@@ -1,6 +1,7 @@
 import { preProcessFile } from 'typescript'
 import styles from './Inputs.module.scss'
 import { useEffect, useRef } from 'react'
+
 type Props = {
     lable: string
     ref1?: React.RefObject<HTMLInputElement>

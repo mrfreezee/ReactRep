@@ -1,9 +1,22 @@
-.lableInput{
+.lableInput {
     font-family: Inter;
     font-size: 16px;
     font-weight: 600;
 }
 
-.inputTitle{
-   
+.inputsAddPost {
+    height: 56px;
+    color: var(--System-Colors-Secondary, #313037);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    border: none;
+    outline: none;
+    margin-bottom: 40px;
+    padding-left: 20px;
 }
+
+
+

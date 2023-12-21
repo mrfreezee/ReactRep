@@ -1,9 +1,9 @@
 import styles from './Blog.module.scss'
 import { Tabs } from '../Tabs/Tabs'
 import { PostsList } from '../PostsList/PostsList'
-import iconArrowLeft from './Arrow.svg'
 import { Footer } from '../Footer/Footer'
-
+import prewArrow from './ArrowPrew.svg'
+import nextArrow from './ArrowNext.svg'
 
 
 
@@ -19,7 +19,10 @@ export const Blog = () =>{
             <Tabs/>
             <PostsList/>
             <div className={styles.pagesPosts}>
-                <button className={styles.buttonPreview}/>
+                <button className={styles.buttonPreview}>
+                    <img src={prewArrow}/>
+                    Prev
+                </button>
                 <div className={styles.wrapperNumberPages}>
                     {
                         arrNumberPages.map((item) =>(
@@ -29,7 +32,10 @@ export const Blog = () =>{
                         ))
                     }
                 </div>
-                <button className={styles.buttonNext}/>
+                <button className={styles.buttonNext}>
+                    Next
+                    <img src={nextArrow}/>
+                </button>
             </div>
             
         </div>

@@ -5,24 +5,27 @@ import { ReactNode } from "react";
 import { Outlet } from "react-router-dom";
 import { useState } from 'react';
 import { useContext } from 'react';
-import { useThemeContext } from '../../helpers/ThemeContext';
+// import { useThemeContext } from '../../helpers/ThemeContext';
+import { useSelector } from 'react-redux';
+import { BurgerMenu } from '../Header/HeaderComponents/Burger/BurgerMenu';
 
+import { selectTheme } from '../../store/Theme/selectors';
+import { selectMenuState } from '../../store/Menu/selectors';
 
 
 export const Layout = () => {   
-    const [theme, setTheme] = useState<string>('light')
+    
 
-    const changeTheme = (theme: string) =>{
-        setTheme(theme)
-    }
+    // const themeCtx = useThemeContext()
 
-    const themeCtx = useThemeContext()
+    const {theme} = useSelector(selectTheme)
 
     return (
-        <div  className={themeCtx.state}>
+        <div  className={theme}>
 
             {/* <RequierAuth> */}
             <Header/>
+            <BurgerMenu />
             <div className='main'>
                 <Outlet/>
             </div>

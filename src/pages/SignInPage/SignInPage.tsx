@@ -25,7 +25,7 @@ export const SignInPage = () =>{
                     <InputPassword lable={'Password'}/>
                     <NavLink className={styles.forgotPasswordButton} to='/resetpasswordpage'>Forgot password?</NavLink>
                 </div>
-                <ButtonComplete><NavLink to='/' style={{color: 'white', textDecoration: 'none', width: '100%', display: 'block'}}>Sign In</NavLink></ButtonComplete>
+                <ButtonComplete link='/'>Sign In</ButtonComplete>
                 <div className={styles.quastionString}>
                     Don’t have an account? <NavLink style={{textDecoration: 'none'}} to='/signup'>Sign Up</NavLink>
                 </div>

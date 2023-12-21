@@ -13,7 +13,7 @@ export const Success = () =>{
                 <p>Email confirmed.<br/>
                     Your registration is now completed
                 </p>
-                <ButtonComplete><NavLink style={{textDecoration: 'none', color: 'white'}} to='/'>Go to home</NavLink></ButtonComplete>
+                <ButtonComplete link='/'>Go to home</ButtonComplete>
 
             </div>
         </div>

@@ -5,9 +5,15 @@ import { ButtonComplete } from '../ComponentsForm/ButtonComplete/ButtonnComplete
 import { InputEmail } from '../ComponentsForm/InputsForm/InputEmail'
 import { InputPassword } from '../ComponentsForm/InputsForm/InputPassword'
 import { NavLink } from 'react-router-dom'
+import { useRef } from 'react'
+
 
 
 export const SignUpPage = () =>{
+
+
+    
+
     return(<>
         <div className={styles.pageWrapper}>
             <HeaderPages name={'Sign Up'}/>
@@ -18,7 +24,7 @@ export const SignUpPage = () =>{
                     <InputPassword lable={'Password'}/>
                     <InputPassword lable={'Confirm password'}/>
                 </div>
-                <ButtonComplete><NavLink style={{textDecoration: 'none', color: 'white'}} to='/registrationconfirmation'>Sign Up</NavLink></ButtonComplete>
+                <ButtonComplete link='/registrationconfirmation'>Sign Up</ButtonComplete>
                 <div className={styles.quastionString}>
                     Don’t have an account? <NavLink style={{textDecoration: 'none'}} to='/signin'>Sign In</NavLink>
                 </div>

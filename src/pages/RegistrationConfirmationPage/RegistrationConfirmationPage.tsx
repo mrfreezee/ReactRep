@@ -14,7 +14,7 @@ export const RegistrationConfirmation = () => {
                     link in the email <span className={styles.emailBold}>example@gmail.com.</span><br/>
                     Please, check your email
                 </p>
-                <ButtonComplete><NavLink style={{textDecoration: 'none', color: 'white'}} to='/'>Go to home</NavLink></ButtonComplete>
+                <ButtonComplete link='/success'>Go to home</ButtonComplete>
             </form>
         </div>
     </>

@@ -3,9 +3,11 @@ import styles from './InputsAddPost.module.scss'
 type Props = {
     lable: string
     ref1?: React.RefObject<HTMLInputElement>
+    type: string
+    placeholder: string
 }
 
-export const InputTitle = ({lable, ref1}: Props) => {
+export const InputsAddPost = ({lable, ref1, type, placeholder}: Props) => {
     
 
     return (
@@ -13,9 +15,9 @@ export const InputTitle = ({lable, ref1}: Props) => {
             <label  className={styles.lableInput}>
                 {lable}
             </label>
-            <input type='text' 
-            className={styles.inputTitle} 
-            placeholder='Enter title' 
+            <input type={type} 
+            className={styles.inputsAddPost} 
+            placeholder={placeholder} 
             ref={ref1} />
         </>
     )

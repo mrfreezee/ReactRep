@@ -20,7 +20,7 @@ export const ResetPasswordPage2 = () =>{
             <form className={styles.pageForm}>
             <p>You will receive an email <span className={styles.emailBold}>example@gmail.com</span> with a link to reset your password!</p>
                 <InputEmail lable={'Email'} ref1={inputRef}/>
-                <ButtonComplete><NavLink style={{textDecoration: 'none', color: 'white'}} to='/'>Go to home</NavLink></ButtonComplete>
+                <ButtonComplete link='/'>Go to home</ButtonComplete>
 
             </form>
         </div>

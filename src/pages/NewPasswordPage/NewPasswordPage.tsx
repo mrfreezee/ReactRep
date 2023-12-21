@@ -17,7 +17,7 @@ export const NewPasswordPage = () =>{
                     <InputPassword lable={'Password'}/>
                     <InputPassword lable={'Confirm password'}/>
                 </div>
-                <ButtonComplete><NavLink style={{textDecoration: 'none', color: 'white'}} to='/'>Set password</NavLink></ButtonComplete>
+                <ButtonComplete link=''>Set password</ButtonComplete>
                 
             </form>
         </div>

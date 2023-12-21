@@ -3,9 +3,11 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { ThemeContextProvider } from './helpers/ThemeContext';
+// import { ThemeContextProvider } from './helpers/ThemeContext';
 import { AuthContextProvider } from './helpers/AuthContext';
 import { BrowserRouter } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import { appStore } from './store/store';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -13,11 +15,13 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <ThemeContextProvider>
-        <AuthContextProvider>
-          <App />
-        </AuthContextProvider>
-      </ThemeContextProvider>
+      <Provider store={appStore}>
+        {/* <ThemeContextProvider> */}
+          <AuthContextProvider>
+            <App />
+          </AuthContextProvider>
+        {/* </ThemeContextProvider> */}
+      </Provider>
     </BrowserRouter>
   </React.StrictMode>
 );

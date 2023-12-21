@@ -1,0 +1,47 @@
+.wrapperButtons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 48px;
+}
+
+.deletePostBtn,
+.cancelBtn,
+.addPostBtn{
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    padding: 16px 32px;
+
+    cursor: pointer;
+}
+
+.deletePostBtn {
+    color: #FD3419;
+    border: 2px solid white;
+
+
+    &:hover{
+        border: 2px solid #DADADA;
+    }
+}
+
+.cancelBtn {
+    background-color: #E8E8E8;
+    border-radius: 2px;
+
+    &:hover{
+        background-color: #DADADA;
+    }
+}
+
+.addPostBtn {
+    color: white;
+    background-color: #2231AA;
+    margin-left: 24px;
+
+    &:hover{
+        background-color: #5360CD;
+    }
+}

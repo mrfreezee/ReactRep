@@ -38,9 +38,10 @@ function App() {
         <Route path='registrationconfirmation' element={<RegistrationConfirmation/>}/>
         <Route path='singlepost/:id' element={<SinglePost/>}/>
         <Route path='addpost' element={
-          <RequierAuth>
-            <AddPost/>
-          </RequierAuth>
+          // <RequierAuth>
+          //   <AddPost/>
+          // </RequierAuth>
+<AddPost/>
         }/>
 
 

@@ -3,6 +3,10 @@ import { UserComponent } from '../User/User'
 import { ThemeButtons } from './ThemeBtns/ThemeBtns'
 import {  NavLink } from 'react-router-dom'
 import { useState } from 'react'
+import { useDispatch } from 'react-redux'
+import { setOpenMenuAction, setCloseMenuAction } from '../../../../store/Menu/actions'
+import { useSelector } from 'react-redux'
+import { selectMenuState } from '../../../../store/Menu/selectors'
 
 type Props = {
     open: boolean
@@ -10,20 +14,28 @@ type Props = {
     changeTheme?: (theme: string) => void
 }
 
-export const BurgerMenu = (props: Props) => {
+export const BurgerMenu = () => {
     const [theme, setTheme] = useState<string>('light')
 
-  const changeTheme = (theme: string) => {
+    const changeTheme = (theme: string) => {
     setTheme(theme)
-  }
-    if (!props.open) {
+}
+
+    const {isOpen} = useSelector(selectMenuState)
+
+
+    // const openMenu = () => dispatch(setOpenMenuAction())
+    // const closeMenu = () => dispatch(setCloseMenuAction())
+
+
+    if (!isOpen){
         return null
     }
-
+    
     return (
-        <div className={style.burgerMenuWrapper}>
+        <div className={style.burgerMenuWrapper} >
             <ul className={style.burgerList}>
-                <li><UserComponent/></li>
+                <li style={{width: '237px'}}><UserComponent/></li>
                 <li className={style.burgerListItem}><NavLink style={{textDecoration: 'none'}} to='/'>Home</NavLink></li>
                 <li className={style.burgerListItem}><NavLink style={{textDecoration: 'none'}} to='/addpost'>Add post</NavLink></li>
             </ul>

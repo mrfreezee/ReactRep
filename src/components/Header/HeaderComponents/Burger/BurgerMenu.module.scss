@@ -2,9 +2,10 @@
     max-width: 236px;
     width: 300%;
     height: 700px;
-    position: absolute;
+    position: fixed;
     top: 85px;
     left: 0;
+    z-index: 1;
     transform: translateX(-150%);
     animation: ani 0.5s forwards;
     background-color: white;

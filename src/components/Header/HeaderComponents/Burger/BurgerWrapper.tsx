@@ -3,7 +3,7 @@ import { BurgerIcon } from "./BurgerIcon"
 import { BurgerMenu } from './BurgerMenu'
 import style from './BurgerWrapper.module.scss'
 
-import { useThemeContext } from '../../../../helpers/ThemeContext';
+// import { useThemeContext } from '../../../../helpers/ThemeContext';
 
 
 
@@ -18,11 +18,11 @@ export const BurgerWrapper = () => {
         setTheme(theme)
     }
 
-    const themeCtx = useThemeContext()
+    // const themeCtx = useThemeContext()
     return (
         <div className={style.menuWrapper}>
-            <BurgerIcon open={open} onClick1={toogle}/>
-            <BurgerMenu open={open} theme={theme} changeTheme={changeTheme}/>
+            <BurgerIcon />
+            {/* <BurgerMenu open={open} theme={theme} changeTheme={changeTheme}/> */}
         </div>
     )
 } 
